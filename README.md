@@ -14,11 +14,10 @@ Imagine you want people to retype the email addresses or/and a password on one o
 ##Method 2: Zepto/jQuery plugin
 I haven't tested the Zepto version at all.
 
-HTML
 ```html
 <input name="retype-email" type="text" class=".disable-copy" />
 ```
-Javascript
+
 ```javascript
 var Zepto = Zepto || null;
 
@@ -39,12 +38,10 @@ $(".disable-copy").disableCopy();
 ```
 
 ##Method 3: Simple Javascript
-HTML
 ```html
 <input name="retype-email" type="text" class=".disable-copy" />
 ```
 
-Javascript
 ```javascript
 var nodes = document.querySelectorAll(".disable-copy");
 
@@ -56,12 +53,10 @@ for (index in nodes) {
 ```
 
 ##Method 4: Javascript prototype
-HTML
 ```html
 <input name="retype-email" type="text" class=".disable-copy" />
 ```
 
-Javascript
 ```javascript
 function edQuery(selector) {
 	return document.querySelectorAll(selector);
