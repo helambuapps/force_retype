@@ -1,21 +1,28 @@
 #Force Retype HTML forms
 
 
-Ways to force users to retype the email address and passwords in a HTML form
+Ways to force users to retype the email address, passwords etc in a HTML form.
 
-Imagine you want people to retype the email addresses or/and a password on one of your registration forms
-
-##Method 1: Pure HTML
+##Method 1: Pure HTML (Best way)
 ```html
-<input name="retype-email" type="text" onDrop="return false" 
-    onPaste="return false" autocomplete=off />
+<input 
+	name = "retype-email" 
+	type = "text" 
+	onDrop = "return false" 
+	onPaste = "return false" 
+	autocomplete = off
+>
 ```
 
 ##Method 2: Zepto/jQuery plugin
 I haven't tested the Zepto version at all.
 
 ```html
-<input name="retype-email" type="text" class=".disable-copy" />
+<input 
+	name = "retype-email" 
+	type = "text" 
+	class = ".disable-copy"
+>
 ```
 
 ```javascript
@@ -39,7 +46,11 @@ $(".disable-copy").disableCopy();
 
 ##Method 3: Simple Javascript
 ```html
-<input name="retype-email" type="text" class=".disable-copy" />
+<input 
+	name = "retype-email" 
+	type = "text" 
+	class = ".disable-copy"
+>
 ```
 
 ```javascript
@@ -54,7 +65,11 @@ for (index in nodes) {
 
 ##Method 4: Javascript prototype
 ```html
-<input name="retype-email" type="text" class=".disable-copy" />
+<input 
+	name = "retype-email" 
+	type = "text" 
+	class = ".disable-copy"
+>
 ```
 
 ```javascript
